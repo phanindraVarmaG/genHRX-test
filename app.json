@@ -1,0 +1,8 @@
+{
+  "android": {
+    "package": "com.phani412.orgsource"
+  },
+  "ios": {
+    "bundleIdentifier": "com.phani412.orgsource"
+  }
+}
