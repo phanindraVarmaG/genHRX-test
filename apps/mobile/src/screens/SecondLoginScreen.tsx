@@ -11,7 +11,7 @@ import {
   StatusBar,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-// import { LinearGradient } from "expo-linear-gradient";
+import { LinearGradient } from "expo-linear-gradient";
 
 // Install: npx expo install expo-linear-gradient
 
@@ -35,11 +35,11 @@ export default function SecondLoginScreen() {
   };
 
   return (
-    // <LinearGradient
-    //   colors={["#7C3AED", "#A855C8", "#EC4899", "#F97316"]}
-    //   locations={[0, 0.3, 0.65, 1]}
-    //   style={styles.gradient}
-    // >
+    <LinearGradient
+      colors={["#7C3AED", "#A855C8", "#EC4899", "#F97316"]}
+      locations={[0, 0.3, 0.65, 1]}
+      style={styles.gradient}
+    >
       <SafeAreaView style={styles.safe}>
         <StatusBar barStyle="light-content" />
         <KeyboardAvoidingView
@@ -117,7 +117,7 @@ export default function SecondLoginScreen() {
           </View>
         </KeyboardAvoidingView>
       </SafeAreaView>
-    // </LinearGradient>
+    </LinearGradient>
   );
 }
 
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
   },
   safe: {
     flex: 1,
-    backgroundColor: '#A855C8',
+    // backgroundColor: '#A855C8',
   },
   kav: {
     flex: 1,

@@ -12,7 +12,7 @@ import {
   Image,
   ActivityIndicator,
 } from 'react-native';
-// import { LinearGradient } from 'expo-linear-gradient';
+import { LinearGradient } from 'expo-linear-gradient';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -116,12 +116,12 @@ export function LoginScreenReactJS({ onNext, onSocialSignup, onSwitchToLogin }: 
   };
 
   return (
-    // <LinearGradient
-    //   colors={['#7C3AED', '#9333EA', '#EA580C']}
-    //   start={{ x: 0, y: 0 }}
-    //   end={{ x: 1, y: 1 }}
-    //   style={styles.gradient}
-    // >
+    <LinearGradient
+      colors={['#7C3AED', '#9333EA', '#EA580C']}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+      style={styles.gradient}
+    >
       <SafeAreaView style={styles.safeArea}>
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -221,7 +221,7 @@ export function LoginScreenReactJS({ onNext, onSocialSignup, onSwitchToLogin }: 
           </ScrollView>
         </KeyboardAvoidingView>
       </SafeAreaView>
-    // </LinearGradient>
+    </LinearGradient>
   );
 }
 
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
   },
   safeArea: {
     flex: 1,
-    backgroundColor: '#7C3AED',
+    // backgroundColor: '#7C3AED',
   },
   kav: {
     flex: 1,

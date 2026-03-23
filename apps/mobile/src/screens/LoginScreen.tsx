@@ -10,6 +10,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { LinearGradient } from 'expo-linear-gradient';
 
 import AppLogo from '../components/AppLogo';
 import IconButton from '../components/IconButton';
@@ -35,12 +36,12 @@ export default function LoginScreen({ navigation }: Props): React.JSX.Element {
   const handleLogin = (): void => navigation.navigate('Login');
 
   return (
-    // <LinearGradient
-    //   colors={['#7B2FBE', '#9B3EC8', '#C2457A', '#E8622A']}
-    //   start={{ x: 0.1, y: 0.0 }}
-    //   end={{ x: 0.9, y: 1.0 }}
-    //   style={styles.gradient}
-    // >
+    <LinearGradient
+      colors={['#7B2FBE', '#9B3EC8', '#C2457A', '#E8622A']}
+      start={{ x: 0.1, y: 0.0 }}
+      end={{ x: 0.9, y: 1.0 }}
+      style={styles.gradient}
+    >
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.container}>
 
@@ -96,7 +97,7 @@ export default function LoginScreen({ navigation }: Props): React.JSX.Element {
 
         </View>
       </SafeAreaView>
-    // </LinearGradient>
+    </LinearGradient>
   );
 }
 
@@ -106,7 +107,6 @@ const styles = StyleSheet.create({
   },
   safeArea: {
     flex: 1,
-    backgroundColor: '#7B2FBE',
   },
   container: {
     flex: 1,

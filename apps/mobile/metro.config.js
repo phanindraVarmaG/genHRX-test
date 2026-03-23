@@ -44,4 +44,11 @@ const nxConfig = module.exports;
 module.exports = {
   ...nxConfig,
   projectRoot: __dirname,
+  resolver: {
+    ...nxConfig.resolver,
+    nodeModulesPaths: [
+      path.resolve(__dirname, 'node_modules'),
+      ...(nxConfig.resolver?.nodeModulesPaths ?? []),
+    ],
+  },
 };
